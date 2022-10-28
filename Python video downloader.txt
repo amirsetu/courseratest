@@ -1,0 +1,14 @@
+#step 1 import Youtube from pytube
+
+from pytube import YouTube
+
+#Step 2 create object of Youtube class
+
+yt = YouTube("https://www.youtube.com/watch?v=BUrVitrNDHY")
+
+# Step 3 download video very quickly
+
+yt.streams.get_highest_resolution().download()
+
+
+
